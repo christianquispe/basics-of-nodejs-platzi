@@ -9,8 +9,8 @@ Para hacer uso de las variables de entorno, debemos llamarlo desde el objeto `pr
 
 ```js
 let myName = process.env.NAME || "World";
-// Usamos el operador OR para asignar el string "World" en el caso de que process.env.NAME se undefined
-// si quieres conocer más sobre el operador OR revisa su documentación https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment
+// Usamos el operador OR para asignar el string "World" en el caso de que process.env.NAME es undefined
+// Si quieres conocer más sobre el operador OR revisa su documentación https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment
 
 console.log("Hello", myName);
 ```
@@ -18,7 +18,7 @@ console.log("Hello", myName);
 ### Asignar valores
 -------------------
 
-Para asignar valores a las varibles de entorno lo podeos hacer en el momento en que levantamos la app.
+Para asignar valores a las varibles de entorno lo podemos hacer en el momento en que levantamos la aplicación.
 
 ```bash
 NAME=Christian node envVars.js
