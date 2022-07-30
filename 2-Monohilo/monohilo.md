@@ -5,7 +5,7 @@ Node al ser monohilo, detiene el programa por completo al encontrar un error. En
 ```js
 console.log("Hola mundo");
 
-// Definimos una variable para y le asignamos un numero
+// Definimos una variable y le asignamos un número
 let i = 0;
 
 // setInterval me permite ejecutar una función cada cierta cantidad de tiempo, recibe como argumentos: Función a ejecutarse, intervalo de tiempo en milisegundos.
