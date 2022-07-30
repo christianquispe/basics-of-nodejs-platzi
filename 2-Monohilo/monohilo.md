@@ -36,7 +36,7 @@ Segunda instrucción
 2
 3
 4
-/home/christian/Desktop/Projects/christianquispe/learn-node-with-platzi/Monohilo/monohilo.js:15
+[...]/Monohilo/monohilo.js:15
     const a = 3 + z;
                   ^
 
