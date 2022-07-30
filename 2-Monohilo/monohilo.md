@@ -10,7 +10,7 @@ let i = 0;
 
 // setInterval me permite ejecutar una función cada cierta cantidad de tiempo, recibe como argumentos: Función a ejecutarse, intervalo de tiempo en milisegundos.
 setInterval(function () {
-  // Imprimimos en la terminal lan e variable i
+  // Imprimimos en la terminal la variable i
   console.log(i);
   // Modificamos la variable cada vez que se ejecuta la función
   i++;
