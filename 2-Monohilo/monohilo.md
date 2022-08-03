@@ -26,7 +26,7 @@ console.log("Segunda instrucción");
 
 ### Terminal
 
-```shel
+```bash
 $ node monohilo.js
 
 Hola mundo
