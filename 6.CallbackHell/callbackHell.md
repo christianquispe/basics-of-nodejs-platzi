@@ -62,6 +62,6 @@ hola("Chris", (nombre) => {
 });
 ```
 
-La función **conversacion** es recursiva. Recibe tres parametros, el más importante es el _parametro_ `nVeces`, que se usa para validar cuántas veces se ejecutará `hablar()` y cuando será hora de ejecutar `despuesDeHablar()`.
+La función **conversacion** es recursiva. Recibe tres parametros, el más importante es el _parametro_ `nVeces`, que se usa para validar cuántas veces se ejecutará `hablar()` (estructura de control) y cuando será el momento de ejecutar `despuesDeHablar()`.
 
 Y listo, hemos refactorizado el código!
