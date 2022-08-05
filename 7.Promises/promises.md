@@ -4,7 +4,7 @@ Las Promesas son una alternativa para trabajar asincronía con una sintaxis mas 
 
 ## Sintaxis
 
-Las Promesas con clases, por lo tanto para usarlas primeros debemos instanciarlas. `Promise` es una función que recibe dos argumentos: **resolve** y **reject**. Utilizamos resolve para retornar el valor deseado cuando una función se ejecute y utilizamos reject para cuando una función retorna un valor no deseado.
+Las Promesas son clases, por lo tanto para usarlas primero debemos instanciarlas. `Promise` es una función que recibe dos argumentos: **resolve** y **reject**. Utilizamos resolve cuando se resuelva la promosa como lo esperabamos y utilizamos reject para cuando la promesa encuentra algun fallo.
 
 ### Ejemplo
 
@@ -23,7 +23,7 @@ const saludar = (nombre) => {
 };
 ```
 
-El ejemplo mostrado consiste en una función que saluda. Esta funcion regresa una promesa, y la promesa valida si tenemos un nombre, en caso de tenerlo se consolea "Hola [ _nombre_ ]" luego se ejecuta el callback `resolve`; de no tener un nombre, se ejecutar el callback `reject`.
+El ejemplo mostrado consiste en una función que saluda. Esta funcion regresa una promesa, y la promesa valida si tenemos un nombre, en caso de tenerlo se consolea "Hola [ _nombre_ ]" luego se ejecuta el callback `resolve`; de no tener un nombre, se ejecutará el callback `reject`.
 
 ```js
 saludar("Chris") // Eliminar el argumento y probar
@@ -36,6 +36,6 @@ saludar("Chris") // Eliminar el argumento y probar
 En el código vemos como se usaría una función asíncrona. Esta es mas legible.
 
 - Primero llamamos a la función y le pasamos sus argumentos (¿O no?).
-- Luego podemos acceder a un metodo de la función asíncrono que `then` y `catch`. Estos metodos reciben como argumento un `callback`.
+- Luego podemos acceder a los métodos de la función asíncrona que son `then` y `catch`. Estos métodos reciben como argumento un `callback`.
 - `then()`se ejecutará si la función asíncrona se resuelve.
 - `catch()` se ejecutará si la función falla.
