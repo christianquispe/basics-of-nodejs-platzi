@@ -1,6 +1,6 @@
 # Async / Await
 
-Las palabras resevadas `sync` y `await` son mejoras en la sintáxis de JavasScript para leer código asíncrono de manera síncrona. Esta sintáxis se usa para trabajar con **promesas**, reemplazando a `then` y `catch`.
+Las palabras resevadas `async` y `await` son mejoras en la sintáxis de JavasScript para leer código asíncrono de manera síncrona. Esta sintáxis se usa para trabajar con **promesas**, reemplazando a `then` y `catch`.
 
 El código `async` es una palabra reservada que sirve para definir funciones asíncronas, por lo tanto, la función estará preparada para ejecutarse de asíncrona pero con un sintáxis síncrona. **async puede ser usado sin await**
 
