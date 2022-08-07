@@ -2,11 +2,13 @@
 
 Las palabras resevadas `async` y `await` son mejoras en la sintáxis de JavasScript para leer código asíncrono de manera síncrona. Esta sintáxis se usa para trabajar con **promesas**, reemplazando a `then` y `catch`.
 
-El código `async` es una palabra reservada que sirve para definir funciones asíncronas, por lo tanto, la función estará preparada para ejecutarse de asíncrona pero con un sintáxis síncrona. **async puede ser usado sin await**
+El código `async` es una palabra reservada que sirve para definir funciones asíncronas, por lo tanto, la función estará preparada para ejecutarse de manera asíncrona pero con un sintáxis síncrona. **async puede ser usado sin await**
 
-Por otro lado, `await` también es una palabra reservada que se encarga de resolver un promesa. La función esperará hasta que que la promesa se resuelva para continuar con su ejecución. **await no puede ser usado sin async**
+Por otro lado, `await` también es una palabra reservada que se encarga de esperar hasta que una promesa sea resuelta. La función esperará hasta que que la promesa se resuelva para continuar con su ejecución. **await no puede ser usado sin async**
 
 ### Example
+
+El código se encuentra comentado en `AsyncAwait.js`
 
 ```js
 // No es necesario declarar hola() con async
@@ -34,11 +36,19 @@ async function app() {
   console.log("Saludamos a", name);
 }
 
-app().then(() => {
-  // Consoleamos para poder validar el orden de ejecución
-  console.log("Terminó todo el proceso");
-});
+app()
+  .then(() => {
+    // Consoleamos para poder validar el orden de ejecución
+    console.log("Terminó todo el proceso");
+  })
+  .catch((err) => {
+    // Consoleamos para poder validar el orden de ejecución en caso de haber un error
+    console.log("Hubo un error");
+    console.log(err);
+  });
 ```
+
+Como se puede apreciar, podemos leer linea a linea la funcion `app()`, como si leyeramos código síncrono. También podemos ver que al momento de ejecutar `app()` podemos usar los metodos `then` y `catch` demostrando así que regresan promesas.
 
 ### Salida
 
